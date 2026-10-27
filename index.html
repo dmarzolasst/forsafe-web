@@ -3,162 +3,413 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forsafe S.A.S. — Seguridad y Protección</title>
-<meta name="description" content="Forsafe S.A.S. comercializa elementos de protección personal, dotación, extintores y equipos de emergencia para empresas en Cartagena y toda Colombia.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231B1B4E'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' fill='white' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<title>Forsafe S.A.S. | Elementos de protección personal y emergencias en Cartagena</title>
+<meta name="description" content="Forsafe S.A.S. comercializa elementos de protección personal, extintores, botiquines, camillas y equipos de emergencia para empresas. Cotiza fácil por WhatsApp.">
+<meta name="theme-color" content="#16145c">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Forsafe S.A.S. — Seguridad y Protección">
+<meta property="og:description" content="EPP, extintores, botiquines y equipos de emergencia para tu empresa. Arma tu cotización y envíala por WhatsApp.">
+<meta property="og:image" content="https://dmarzolasst.github.io/forsafe-web/assets/og-image.jpg">
+<meta property="og:url" content="https://dmarzolasst.github.io/forsafe-web/">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-text">Seguridad y protección para empresas · Cartagena, Bolívar</span>
+    <div class="topbar-links">
+      <a href="tel:+573045609816">+57 304 560 9816</a>
+      <a href="mailto:comercial.forsafe@gmail.com">comercial.forsafe@gmail.com</a>
+      <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener">@Forsafe_sas</a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
   <div class="container header-inner">
-    <a href="#" class="brand">
+    <a href="#inicio" class="brand" aria-label="Forsafe S.A.S. — inicio">
       <img src="assets/logo-forsafe.png" alt="Forsafe S.A.S. — Seguridad y Protección" class="brand-logo">
     </a>
 
-    <nav class="main-nav" id="main-nav">
-      <a href="#productos">Productos</a>
-      <a href="#nosotros">Nosotros</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#kit">Kit de emergencia</a>
+      <a href="#servicios">Servicios</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="btn btn-primary header-cta" href="https://wa.me/573045609816?text=Hola%20Forsafe%2C%20quiero%20cotizar%20elementos%20de%20protecci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
-
-    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <button class="quote-btn" id="open-quote" type="button" aria-label="Ver mi cotización">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1zM6 6h0a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="quote-btn-label">Mi cotización</span>
+        <span class="quote-count" data-quote-count hidden>0</span>
+      </button>
+      <a class="btn btn-wa btn-sm header-wa" href="#" data-wa="Hola Forsafe 👋, quiero hacer una consulta.">
+        <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+        WhatsApp
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="inicio">
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-inner">
-      <h1>Protección y seguridad<br>para tu empresa</h1>
-      <p class="hero-lead">
-        Comercializamos elementos de protección personal, dotación, extintores y
-        equipos de emergencia para empresas en Cartagena y toda Colombia.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/573045609816?text=Hola%20Forsafe%2C%20quiero%20cotizar%20elementos%20de%20protecci%C3%B3n" target="_blank" rel="noopener">Cotiza por WhatsApp</a>
-        <a class="btn btn-outline" href="#productos">Ver productos</a>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow eyebrow-light">Seguridad y protección · Cartagena</span>
+        <h1>Protege a tu equipo con <span class="hl">EPP de calidad</span></h1>
+        <p class="hero-lead">
+          Elementos de protección personal, extintores, botiquines y equipos de emergencia para empresas.
+          Arma tu cotización aquí y envíala directo por WhatsApp.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa btn-lg" href="#" data-wa="Hola Forsafe 👋, quiero cotizar elementos de protección para mi empresa.">
+            <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+            Cotizar por WhatsApp
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#catalogo">Ver catálogo</a>
+        </div>
+        <ul class="hero-points">
+          <li>Fotos reales de nuestros productos</li>
+          <li>Atención directa por WhatsApp</li>
+          <li>Acompañamiento en SST</li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal">
+        <figure class="tile tile-main">
+          <img src="assets/catalogo/kit-emergencia-1-lg.webp" alt="Camilla, botiquín, extintor y equipos de emergencia Forsafe" width="1100" height="1467" fetchpriority="high">
+        </figure>
+        <figure class="tile tile-a">
+          <img src="assets/catalogo/casco-1-sm.webp" alt="Casco de seguridad blanco" width="600" height="800">
+        </figure>
+        <figure class="tile tile-b">
+          <img src="assets/catalogo/bota-1-sm.webp" alt="Bota de seguridad negra" width="600" height="800">
+        </figure>
+        <div class="hero-badge">
+          <img src="assets/favicon.png" alt="" width="36" height="36">
+          <span><strong>Forsafe S.A.S.</strong> Seguridad y Protección</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="productos" class="section">
+  <!-- CATEGORÍAS RÁPIDAS -->
+  <section class="cats" aria-label="Categorías">
     <div class="container">
-      <h2 class="section-title">Nuestros productos</h2>
-      <p class="section-lead">Todo lo que tu empresa necesita para cumplir con seguridad y salud en el trabajo.</p>
-
-      <div class="grid">
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/epp.jpg" alt="Casco de protección personal" loading="lazy">
-          </div>
-          <h3>Elementos de Protección Personal</h3>
-          <p>Cascos, guantes, gafas, protección auditiva y respiratoria para cada puesto de trabajo.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/dotacion.jpg" alt="Dotación y uniformes de alta visibilidad" loading="lazy">
-          </div>
-          <h3>Dotación empresarial</h3>
-          <p>Uniformes y dotación para tu personal, según la normativa vigente.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/extintores.jpg" alt="Extintor multipropósito" loading="lazy">
-          </div>
-          <h3>Extintores</h3>
-          <p>Venta de extintores nuevos, certificados y adecuados para cada tipo de riesgo.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/recarga.jpg" alt="Recarga de extintores" loading="lazy">
-          </div>
-          <h3>Recarga y mantenimiento</h3>
-          <p>Servicio técnico y recarga certificada de extintores.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/botiquines.jpg" alt="Botiquín de primeros auxilios" loading="lazy">
-          </div>
-          <h3>Botiquines</h3>
-          <p>Botiquines de primeros auxilios equipados para empresas.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="assets/productos/camillas.jpg" alt="Camilla de emergencia" loading="lazy">
-          </div>
-          <h3>Camillas y emergencia</h3>
-          <p>Camillas, señalización y equipos para atención de emergencias.</p>
-        </article>
-
-      </div>
+      <div class="cats-row" id="cats-row"></div>
     </div>
   </section>
 
-  <section id="nosotros" class="section section-alt">
-    <div class="container nosotros-inner">
-      <h2 class="section-title">Nosotros</h2>
-      <p>
-        En <strong>Forsafe S.A.S.</strong> trabajamos para que la seguridad de tu empresa esté siempre
-        protegida. Comercializamos elementos de protección personal, dotación y equipos de emergencia,
-        acompañando a cada empresa para que cumpla con la normativa vigente en seguridad y salud en el trabajo.
-      </p>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>EPP</span><span>Extintores</span><span>Botiquines</span><span>Camillas</span><span>Protección respiratoria</span><span>Guantes</span><span>Calzado de seguridad</span><span>Kits de emergencia</span>
+      <span>EPP</span><span>Extintores</span><span>Botiquines</span><span>Camillas</span><span>Protección respiratoria</span><span>Guantes</span><span>Calzado de seguridad</span><span>Kits de emergencia</span>
     </div>
-  </section>
+  </div>
 
-  <section id="contacto" class="section">
+  <!-- CATÁLOGO -->
+  <section id="catalogo" class="section">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-lead">Escribinos y te cotizamos sin compromiso.</p>
-
-      <div class="contact-grid">
-        <a class="contact-item" href="https://wa.me/573045609816" target="_blank" rel="noopener">
-          <span class="contact-label">WhatsApp / Teléfono</span>
-          <span class="contact-value">+57 304 560 9816</span>
-        </a>
-        <a class="contact-item" href="mailto:comercial.forsafe@gmail.com">
-          <span class="contact-label">Email comercial</span>
-          <span class="contact-value">comercial.forsafe@gmail.com</span>
-        </a>
-        <a class="contact-item" href="mailto:contacto.forsafe@gmail.com">
-          <span class="contact-label">Email de contacto</span>
-          <span class="contact-value">contacto.forsafe@gmail.com</span>
-        </a>
-        <a class="contact-item" href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener">
-          <span class="contact-label">Instagram</span>
-          <span class="contact-value">@Forsafe_sas</span>
-        </a>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Catálogo</span>
+          <h2>Nuestros productos</h2>
+          <p class="section-lead">Toca un producto para ver sus fotos y detalles. Agrégalo a tu cotización y nos la envías por WhatsApp.</p>
+        </div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" id="search" placeholder="Buscar: guantes, casco, extintor…" autocomplete="off">
+        </label>
       </div>
+
+      <div class="chips" id="chips" role="tablist" aria-label="Filtrar por categoría"></div>
+
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-results" id="empty-results" hidden>No encontramos ese producto. <a href="#" data-wa-search>Pregúntanos por WhatsApp</a> y te ayudamos a conseguirlo.</p>
+    </div>
+  </section>
+
+  <!-- KIT DE EMERGENCIA -->
+  <section id="kit" class="kit">
+    <div class="container kit-grid">
+      <div class="kit-media reveal">
+        <img class="kit-img-main" src="assets/catalogo/kit-emergencia-2-lg.webp" alt="Kit de emergencia: camilla, botiquín, extintor y kit de derrames" loading="lazy" width="1100" height="1467">
+        <img class="kit-img-float" src="assets/catalogo/botiquin-1-sm.webp" alt="Botiquín de primeros auxilios" loading="lazy" width="600" height="800">
+      </div>
+      <div class="kit-copy reveal">
+        <span class="eyebrow eyebrow-light">Brigadas y emergencias</span>
+        <h2>Arma el kit de emergencia de tu empresa</h2>
+        <p>Selecciona lo que necesitas y lo agregamos de una vez a tu cotización.</p>
+        <form class="kit-list" id="kit-form">
+          <label class="kit-item"><input type="checkbox" value="camilla" checked><img src="assets/catalogo/camilla-1-sm.webp" alt="" loading="lazy"><span>Camilla rígida</span></label>
+          <label class="kit-item"><input type="checkbox" value="botiquin" checked><img src="assets/catalogo/botiquin-1-sm.webp" alt="" loading="lazy"><span>Botiquín de primeros auxilios</span></label>
+          <label class="kit-item"><input type="checkbox" value="extintor" checked><img src="assets/catalogo/extintor-1-sm.webp" alt="" loading="lazy"><span>Extintor multipropósito</span></label>
+          <label class="kit-item"><input type="checkbox" value="kit-derrames" checked><img src="assets/catalogo/kit-derrames-1-sm.webp" alt="" loading="lazy"><span>Kit control de derrames</span></label>
+          <div class="kit-actions">
+            <button class="btn btn-yellow btn-lg" type="submit">Agregar a mi cotización</button>
+            <a class="btn btn-ghost btn-lg" href="#" data-wa="Hola Forsafe 👋, quiero información sobre el kit de emergencia para mi empresa (camilla, botiquín, extintor, kit de derrames).">Preguntar por el kit</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Servicios</span>
+          <h2>Más que productos</h2>
+        </div>
+      </div>
+      <div class="services">
+        <article class="service reveal">
+          <div class="service-img"><img src="assets/catalogo/extintor-3-sm.webp" alt="Extintor multipropósito" loading="lazy" width="600" height="800"></div>
+          <div class="service-body">
+            <h3>Recarga y mantenimiento de extintores</h3>
+            <p>Mantén tus extintores al día. Escríbenos y coordinamos la recarga.</p>
+            <a class="link-arrow" href="#" data-wa="Hola Forsafe 👋, quiero información sobre recarga y mantenimiento de extintores.">Solicitar recarga</a>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service-img"><img src="assets/catalogo/guantes-nitrilo-1-sm.webp" alt="Guantes de nitrilo" loading="lazy" width="600" height="800"></div>
+          <div class="service-body">
+            <h3>Dotación empresarial</h3>
+            <p>Uniformes y dotación para tu personal según el puesto de trabajo.</p>
+            <a class="link-arrow" href="#" data-wa="Hola Forsafe 👋, quiero cotizar dotación para el personal de mi empresa.">Cotizar dotación</a>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service-img"><img src="assets/catalogo/mascara-3m-1-sm.webp" alt="Máscara facial completa" loading="lazy" width="600" height="800"></div>
+          <div class="service-body">
+            <h3>Asesoría en EPP</h3>
+            <p>Te ayudamos a elegir el elemento de protección adecuado para cada riesgo.</p>
+            <a class="link-arrow" href="#" data-wa="Hola Forsafe 👋, necesito asesoría para elegir los elementos de protección de mi empresa.">Pedir asesoría</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO COTIZAR -->
+  <section class="section steps-section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div>
+          <span class="eyebrow">Así de fácil</span>
+          <h2>Cotiza en 3 pasos</h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-n">1</span><h3>Elige</h3><p>Agrega productos del catálogo con el botón <strong>+ Cotizar</strong>.</p></li>
+        <li class="step reveal"><span class="step-n">2</span><h3>Ajusta</h3><p>Abre <strong>Mi cotización</strong> y define cantidades.</p></li>
+        <li class="step reveal"><span class="step-n">3</span><h3>Envía</h3><p>Se abre WhatsApp con tu pedido listo. Solo le das enviar.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section ig-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Síguenos</span>
+          <h2>@Forsafe_sas en Instagram</h2>
+        </div>
+        <a class="btn btn-outline" href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener">Ver Instagram</a>
+      </div>
+      <div class="ig-grid">
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/gafas-3-sm.webp" alt="Gafas de seguridad" loading="lazy"></a>
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/tapones-2-sm.webp" alt="Tapones auditivos" loading="lazy"></a>
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/guantes-latex-2-sm.webp" alt="Guantes de látex" loading="lazy"></a>
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/botiquin-2-sm.webp" alt="Botiquín" loading="lazy"></a>
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/mascara-3m-2-sm.webp" alt="Máscara 3M" loading="lazy"></a>
+        <a href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener" class="ig-tile reveal"><img src="assets/catalogo/extintor-2-sm.webp" alt="Extintor" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section-soft">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2>Hablemos de la seguridad de tu empresa</h2>
+        <p class="section-lead">Escríbenos y te cotizamos sin compromiso.</p>
+        <div class="contact-cards">
+          <a class="contact-card" href="#" data-wa="Hola Forsafe 👋, quiero hacer una consulta.">
+            <span class="contact-ico ico-wa"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg></span>
+            <span><small>WhatsApp / Teléfono</small><strong>+57 304 560 9816</strong></span>
+          </a>
+          <a class="contact-card" href="mailto:comercial.forsafe@gmail.com">
+            <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <span><small>Email comercial</small><strong>comercial.forsafe@gmail.com</strong></span>
+          </a>
+          <a class="contact-card" href="mailto:contacto.forsafe@gmail.com">
+            <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <span><small>Email de contacto</small><strong>contacto.forsafe@gmail.com</strong></span>
+          </a>
+          <a class="contact-card" href="https://instagram.com/Forsafe_sas" target="_blank" rel="noopener">
+            <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+            <span><small>Instagram</small><strong>@Forsafe_sas</strong></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <h3>Escríbenos por WhatsApp</h3>
+        <p>Llena esto y se abre WhatsApp con tu mensaje listo.</p>
+        <label>Nombre<input type="text" name="nombre" autocomplete="name" placeholder="Tu nombre"></label>
+        <label>Empresa<input type="text" name="empresa" autocomplete="organization" placeholder="Nombre de tu empresa"></label>
+        <label>¿Qué necesitas?<textarea name="mensaje" rows="4" placeholder="Ej: 20 cascos, 50 pares de guantes y recarga de 5 extintores" required></textarea></label>
+        <button class="btn btn-wa btn-lg btn-block" type="submit">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+          Enviar por WhatsApp
+        </button>
+      </form>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="container footer-inner">
-    <span>© <span id="year"></span> Forsafe S.A.S. Todos los derechos reservados.</span>
-    <a href="https://wa.me/573045609816" target="_blank" rel="noopener">+57 304 560 9816</a>
+    <img src="assets/logo-forsafe.png" alt="Forsafe S.A.S." class="footer-logo" loading="lazy">
+    <nav class="footer-nav" aria-label="Pie de página">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#kit">Kit de emergencia</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <p class="footer-copy">© <span id="year"></span> Forsafe S.A.S. · Seguridad y Protección</p>
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/573045609816?text=Hola%20Forsafe%2C%20quiero%20cotizar%20elementos%20de%20protecci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
-  <span class="whatsapp-float-ring"></span>
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.3.64 4.45 1.75 6.29L4 29l7.86-1.7a12 12 0 0 0 4.16.74h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.39l-.36-.21-4.66 1 1.02-4.54-.24-.37a9.86 9.86 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.04 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.44 9.9-8.97 9.9zm5.44-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
-</a>
+<!-- MODAL DE PRODUCTO -->
+<dialog class="modal" id="product-modal" aria-labelledby="pm-title">
+  <button class="modal-close" type="button" data-close aria-label="Cerrar">&times;</button>
+  <div class="pm">
+    <div class="pm-gallery">
+      <img class="pm-main" id="pm-main" src="" alt="">
+      <div class="pm-thumbs" id="pm-thumbs"></div>
+    </div>
+    <div class="pm-info">
+      <span class="tag" id="pm-cat"></span>
+      <h3 id="pm-title"></h3>
+      <p class="pm-brand" id="pm-brand"></p>
+      <p class="pm-desc" id="pm-desc"></p>
+      <ul class="pm-details" id="pm-details"></ul>
+      <div class="pm-qty">
+        <span>Cantidad</span>
+        <div class="stepper">
+          <button type="button" data-step="-1" aria-label="Menos">−</button>
+          <input type="number" id="pm-qty" min="1" value="1" inputmode="numeric" aria-label="Cantidad">
+          <button type="button" data-step="1" aria-label="Más">+</button>
+        </div>
+      </div>
+      <div class="pm-actions">
+        <button class="btn btn-navy btn-lg btn-block" type="button" id="pm-add">+ Agregar a mi cotización</button>
+        <a class="btn btn-wa btn-lg btn-block" href="#" id="pm-wa">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+          Preguntar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</dialog>
 
+<!-- PANEL DE COTIZACIÓN -->
+<dialog class="drawer" id="quote-drawer" aria-labelledby="qd-title">
+  <div class="drawer-head">
+    <h3 id="qd-title">Mi cotización</h3>
+    <button class="modal-close" type="button" data-close aria-label="Cerrar">&times;</button>
+  </div>
+  <div class="drawer-body">
+    <ul class="quote-list" id="quote-list"></ul>
+    <div class="quote-empty" id="quote-empty">
+      <p><strong>Tu cotización está vacía.</strong></p>
+      <p>Agrega productos desde el catálogo con el botón <strong>+ Cotizar</strong>.</p>
+      <a class="btn btn-navy" href="#catalogo" data-close>Ir al catálogo</a>
+    </div>
+    <div class="quote-fields" id="quote-fields">
+      <label>Nombre (opcional)<input type="text" id="q-nombre" autocomplete="name"></label>
+      <label>Empresa (opcional)<input type="text" id="q-empresa" autocomplete="organization"></label>
+    </div>
+  </div>
+  <div class="drawer-foot" id="quote-foot">
+    <button class="btn btn-wa btn-lg btn-block" type="button" id="send-quote">
+      <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+      Enviar cotización por WhatsApp
+    </button>
+    <button class="btn-text" type="button" id="clear-quote">Vaciar cotización</button>
+  </div>
+</dialog>
+
+<!-- WIDGET DE WHATSAPP -->
+<div class="wa-widget" id="wa-widget">
+  <div class="wa-panel" id="wa-panel" role="dialog" aria-label="Chat de WhatsApp" hidden>
+    <div class="wa-panel-head">
+      <img src="assets/favicon.png" alt="" class="wa-avatar">
+      <div>
+        <strong>Forsafe S.A.S.</strong>
+        <small>Asesoría comercial</small>
+      </div>
+      <button type="button" class="wa-panel-close" id="wa-close" aria-label="Cerrar chat">&times;</button>
+    </div>
+    <div class="wa-panel-body">
+      <div class="wa-bubble">
+        ¡Hola! 👋 Somos <strong>Forsafe</strong>.<br>¿Qué necesitas para tu empresa?
+      </div>
+      <div class="wa-quick">
+        <button type="button" data-wa="Hola Forsafe 👋, quiero cotizar elementos de protección personal (EPP).">Cotizar EPP</button>
+        <button type="button" data-wa="Hola Forsafe 👋, quiero información sobre extintores y recarga.">Extintores y recarga</button>
+        <button type="button" data-wa="Hola Forsafe 👋, quiero información sobre botiquines y camillas.">Botiquines y camillas</button>
+        <button type="button" data-wa="Hola Forsafe 👋, quiero cotizar dotación para mi personal.">Dotación</button>
+        <button type="button" data-open-quote>Ver mi cotización</button>
+      </div>
+    </div>
+    <form class="wa-panel-foot" id="wa-form">
+      <input type="text" id="wa-input" placeholder="Escribe tu mensaje…" aria-label="Mensaje" autocomplete="off">
+      <button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20l18-8L3 4v6l12 2-12 2z" fill="currentColor"/></svg></button>
+    </form>
+  </div>
+
+  <div class="wa-teaser" id="wa-teaser" hidden>
+    <button type="button" class="wa-teaser-close" id="wa-teaser-close" aria-label="Cerrar">&times;</button>
+    <span>¡Hola! 👋 ¿Te ayudamos a cotizar?</span>
+  </div>
+
+  <button class="wa-fab" id="wa-fab" type="button" aria-label="Abrir chat de WhatsApp" aria-expanded="false" aria-controls="wa-panel">
+    <span class="wa-ring"></span>
+    <span class="wa-ring wa-ring-2"></span>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-wa"/></svg>
+    <span class="wa-dot" id="wa-dot">1</span>
+  </button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="icon-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.3.64 4.45 1.75 6.29L4 29l7.86-1.7a12 12 0 0 0 4.16.74h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.39l-.36-.21-4.66 1 1.02-4.54-.24-.37a9.86 9.86 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.04 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.44 9.9-8.97 9.9zm5.44-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></symbol>
+</svg>
+
+<script src="js/productos.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
